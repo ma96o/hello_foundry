@@ -27,7 +27,7 @@ contract NFTTest is Test {
         string memory result = nftContract.tokenURI(index);
         string memory expected = string(
             abi.encodePacked(
-                "https://example.com/",
+                "https://example.com",
                 Strings.toString(index),
                 ".json"
             )
